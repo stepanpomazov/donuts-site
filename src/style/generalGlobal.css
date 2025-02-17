@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p,h1,h2,h3,h4 {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+body{
+    min-width: 320px;
+    word-break: normal;
+    font-family: "Montserrat-Regular", "Montserrat-Medium", "Montserrat-SemiBold",
+    "MontserratAlternates-regular", "MontserratAlternates-Medium", "Mulish-Regular",
+    "Roboto-Medium", "Rubik Doodle Shadow", sans-serif;
+    background-color: var(--white-color);
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+:root{
+    --white-color: #FFFFFF;
+    --light-peach-header-color: #fffcf9;
+    --black-color: #000000;
+    --peach-color: #ff9d9b;
+    --choco-color: #76473b;
+    --red-text-hero-title: #BE0D15;
+    --pink-color-button: #FD8878;
+    --peach-circle-background: #FFF3E3;
+    --brown-text: #6B4336;
+    --brown-link: #E09077;
+    --yellow-background-card: #FFF7E2;
+    --pink-background-card: #FFF2EA;
+    --blue-background-card: #ECF2FF;
+    --orange-text: #e05804;
+}
+
+.btn-styles{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border-radius: 20px;
+}
+
+.link_style {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.link_style_hovered {
+    color: #E09077;
+    text-decoration: underline;
+}
+
+.link_style_clicked {
+    font-size: 15px;
+    color:  var(--choco-color)
+}

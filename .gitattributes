@@ -1,0 +1,16 @@
+* text=auto
+
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.svg binary
+
+*.bat text eol=crlf
+*.cmd text eol=crlf

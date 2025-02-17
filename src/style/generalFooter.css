@@ -1,0 +1,141 @@
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: var(--brown-text);
+    background-color: var(--peach-circle-background);
+}
+
+.footer-wrapper{
+    max-width: 1440px;
+    min-height: 301px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.general-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.footer_nav {
+    max-height: 60%;
+    min-width: 135px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_top_txt {
+
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer_nav_ul {
+    margin-top: 24px;
+}
+
+.footer_txt {
+    margin-top: 14px;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+.contacts_wrapper {
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contacts {
+    margin-top: 34px;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.footer_mail {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.contacts-style-element{
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer_tel {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.media_icons_container {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    gap: 7px;
+}
+
+.media_links {
+    width: 29px;
+    height: 29px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    background-color: var(--peach-color);
+}
+
+.youtube_svg {
+    margin-top: 3px;
+}
+
+.vk_svg {
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.instagram_svg {
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.operating-mode_wrapper {
+    min-height: 204px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.operating_span {
+    margin-top: 25px;
+    display: flex;
+}
+
+.footer-timeAndDays{
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer_time {
+    margin-left: 4px;
+    color: var(--orange-text);
+}
+
+.footer_privacy {
+    margin-top: 60px;
+}
+
+.footer_personal_data {
+    margin-top: 10px;
+}

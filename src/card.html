@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../src/styles/Normalize.css">
+    <link rel="fonts" href="../src/styles/fonts.css">
+    <link rel="stylesheet" href="../src/styles/donut_card_main.css">
+    <link rel="stylesheet" href="../src/styles/media_card.css">
+    <link rel="stylesheet" href="../src/styles/cart.css">
+    <script src="../src/js/card.js" type="module" defer></script>
+    <script src="../src/js/footer_header.js" type="module" defer></script>
+    <script src="../src/js/burger.js" type="module" defer></script>
+    <title>Карточка товара</title>
+</head>
+<body>
+<header class="header">
+    <div class="header_wrapper">
+        <a class="links_dinamic header_logo"  data-url="generalList.html">
+            <img src="../src/imgs/logo_test.jpg" alt="Логотип">
+        </a>
+        <div class="menu_icon">
+            <span></span>
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav_ul">
+                <li class="link_style list-reset">
+                    <a class="links_dinamic" data-url="about_us.html">О нас</a>
+                </li>
+                <li class="link_style list-reset">
+                    <a class="links_dinamic"  data-url="index1.html">Меню</a>
+                </li>
+                <li class="link_style list-reset">
+                    <a class="links_dinamic" data-url="index.html">Конструктор</a>
+                </li>
+                <li class="link_style list-reset">
+                    <a href="#">Доставка и оплата</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="opening_hours_wrapper">
+            <svg class="clock" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><g id="time">
+                <path d="M12,0C5.4,0,0,5.4,0,12c0,6.6,5.4,12,12,12s12-5.4,12-12C24,5.4,18.6,0,12,0z M12,21c-5,0-9-4-9-9c0-5,4-9,9-9s9,4,9,9    C21,17,17,21,12,21z"/>
+                <path d="M14,11.2V7c0-1.1-0.9-2-2-2s-2,0.9-2,2v5c0,0.5,0.2,1,0.6,1.4l3,3C14,16.8,14.5,17,15,17s1-0.2,1.4-0.6    c0.8-0.8,0.8-2,0-2.8L14,11.2z"/></g></g>
+            </svg>
+            <span>Сегодня c </span>
+            <span class="opening_hours_span">10:00</span>
+            <span >до</span>
+            <span  class="opening_hours_span">20:00</span>
+        </div>
+        <div class="header_icons_container">
+            <a href="#" class="header_login-cart_styles header_cart">
+                <svg class="header_cart-login_icons" alt="корзина" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.04175 23.25C7.62091 23.25 6.47133 24.4125 6.47133 25.8333C6.47133 27.2542 7.62091 28.4167 9.04175 28.4167C10.4626 28.4167 11.6251 27.2542 11.6251 25.8333C11.6251 24.4125 10.4626 23.25 9.04175 23.25ZM1.29175 3.87499C1.29175 4.5854 1.873 5.16665 2.58341 5.16665H3.87508L8.52508 14.9704L6.78133 18.1221C5.83842 19.8529 7.07841 21.9583 9.04175 21.9583H23.2501C23.9605 21.9583 24.5417 21.3771 24.5417 20.6667C24.5417 19.9562 23.9605 19.375 23.2501 19.375H9.04175L10.4626 16.7917H20.0855C21.0542 16.7917 21.9067 16.2621 22.3459 15.4612L26.9701 7.07832C27.0789 6.88254 27.1348 6.66172 27.1321 6.43773C27.1294 6.21373 27.0683 5.99432 26.9548 5.8012C26.8412 5.60808 26.6793 5.44795 26.4849 5.33666C26.2904 5.22537 26.0703 5.16677 25.8463 5.16665H6.72967L5.86425 3.31957C5.76082 3.0988 5.59644 2.9122 5.39047 2.78175C5.18451 2.65131 4.94554 2.58246 4.70175 2.58332H2.58341C1.873 2.58332 1.29175 3.16457 1.29175 3.87499ZM21.9584 23.25C20.5376 23.25 19.388 24.4125 19.388 25.8333C19.388 27.2542 20.5376 28.4167 21.9584 28.4167C23.3792 28.4167 24.5417 27.2542 24.5417 25.8333C24.5417 24.4125 23.3792 23.25 21.9584 23.25Z" fill="white"/>
+                </svg>
+                <div data-id="cart_header_counter_wrapper" class="header_cart_number hidden">
+                    <span class="cart_digit"></span>
+                </div>
+            </a>
+            <a href="#" class="header_login-cart_styles header_login">
+                <svg class="header_cart-login_icons" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 4.5C4.5 6.981 6.519 9 9 9C11.481 9 13.5 6.981 13.5 4.5C13.5 2.019 11.481 0 9 0C6.519 0 4.5 2.019 4.5 4.5ZM17 19H18V18C18 14.141 14.859 11 11 11H7C3.14 11 0 14.141 0 18V19H17Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="cart-popup hidden">
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <p>Общая стоимость: <span id="totalPrice">0 руб.</span></p>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="card_main">
+    <section class="card_section">
+        <nav>
+            <ul class="card_ul">
+                <li class="card_nav_links list-reset link_style">Главная страница</li>
+                <span class="arrow_card_nav">></span>
+                <li class="card_nav_links list-reset link_style">
+                    <a class="link_menu"  href="./index1.html">Меню</a>
+                </li>
+                <span class="arrow_card_nav">></span>
+                <li class="card_nav_links list-reset link_style">Пончики</li>
+                <span class="arrow_card_nav">></span>
+                <li class="routing_card_url card_nav_links list-reset link_style" data-id="product"></li>
+            </ul>
+        </nav>
+        <div class="media_card_link_h2">
+            <a class="menu_link_card_mobile" href="./index1.html"><svg class="menu_link_card_mobile" width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.30383 9.41835L8.37508 16.7253L10.1426 14.8989L3.95508 8.50514L10.1426 2.11139L8.37508 0.284973L1.30383 7.59193C1.06949 7.83416 0.937845 8.16264 0.937845 8.50514C0.937845 8.84764 1.06949 9.17613 1.30383 9.41835Z" fill="#6F6F6F"/>
+            </svg></a>
+            <h2 class="card_h2" data-id="product"></h2>
+        </div>
+        <div class="main_card_flex_wrapper">
+            <picture class="card_donut_picture">
+                <img class="productImage" alt="Продукт">
+            </picture>
+            <div class="right_card_flex_container">
+                <div class="card_btn_wrapper">
+                    <span class="card_price_span productPrice"></span>
+                    <button class="btn-reset btn card_btn_cart">В корзину</button>
+                </div>
+                <h3 class="card_h3_energy">КБЖУ на 1 порцию</h3>
+                <button class="energy_btn_media btn-reset">КБЖУ на 1 порцию<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.15694 7.71102L1.49994 13.368L0.0859375 11.954L5.03594 7.00402L0.0859375 2.05401L1.49994 0.640015L7.15694 6.29702C7.34441 6.48454 7.44972 6.73885 7.44972 7.00402C7.44972 7.26918 7.34441 7.52349 7.15694 7.71102Z" fill="#6F6F6F"/>
+                </svg>
+                </button>
+                <div class="energy_value_wrapper">
+                    <div class="kcal_wrapper energy_wrappers">
+                        <span class="energy_spans">Ккал</span>
+                        <div class="numbers_wrappers_energy">
+                            <span class="kcal_count productKcal"></span>
+                        </div>
+                    </div>
+                    <div class="proteins_wrapper energy_wrappers">
+                        <span class="energy_spans">Белки</span>
+                        <div class="numbers_wrappers_energy">
+                            <span class="kcal_count productProteins"></span>
+                        </div>
+                    </div>
+                    <div class="fats_wrapper energy_wrappers">
+                        <span class="energy_spans">Жиры</span>
+                        <div class="numbers_wrappers_energy">
+                            <span class="kcal_count productFats"></span>
+                        </div>
+                    </div>
+                    <div class="carbohydrates_wrapper energy_wrappers">
+                        <span class="energy_spans">Углеводы</span>
+                        <div class="numbers_wrappers_energy">
+                            <span class="kcal_count productCarbohydrates"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_description_wrapper">
+                    <span class="card_title_spans">Описание</span>
+                    <span class="card_main_text card_description_txt productDescription"></span>
+                </div>
+            </div>
+        </div>
+        <div class="card_composition_wrapper">
+            <span class="card_title_spans">Состав</span>
+            <p class="card_main_text card_composition_txt productComposition"></p>
+        </div>
+        <div class="sum_wrapper_media_card">
+            <span class="total_cost_media_title">Итого:</span>
+            <span class="total_cost_media_card"></span>
+        </div>
+        <button class="btn_media_cart_card btn btn-reset">В корзину</button>
+    </section>
+</main>
+<footer class="footer" >
+    <div class="footer-wrapper">
+        <a href="#" class="footer_logo">
+            <img class="general-logo" src="./imgs/logo_test.jpg" alt="Логотип">
+        </a>
+        <nav class="footer_nav">
+            <span class="footer_top_txt">Наша компания</span>
+            <ul class="footer_nav_ul list-reset">
+                <li class="ink_style-footer">
+                    <a class="footer_txt" href="#">Главная</a>
+                </li>
+                <li class="link_style-footer">
+                    <a class="footer_txt" href="../src/about_us.html">О нас</a>
+                </li>
+                <li class="link_style-footer">
+                    <a class="footer_txt" href="#">Меню</a>
+                </li>
+                <li class="link_style-footer">
+                    <a class="footer_txt" href="#">Конструктор</a>
+                </li>
+                <li class="link_style-footer">
+                    <a class="footer_txt" href="#">Доставка и оплата</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contacts_wrapper">
+            <span class="footer_top_txt">Связаться с нами</span>
+            <span class="footer_contacts">Контакты</span>
+            <a class="footer_mail" href="mailto:alponchino@gmail.com">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.66667 18.3334C3.1625 18.3334 2.73106 18.1541 2.37234 17.7953C2.01361 17.4366 1.83395 17.0049 1.83334 16.5001V5.50008C1.83334 4.99591 2.013 4.56447 2.37234 4.20575C2.73167 3.84703 3.16311 3.66736 3.66667 3.66675H18.3333C18.8375 3.66675 19.2693 3.84641 19.6286 4.20575C19.9879 4.56508 20.1673 4.99653 20.1667 5.50008V16.5001C20.1667 17.0042 19.9873 17.436 19.6286 17.7953C19.2699 18.1547 18.8381 18.334 18.3333 18.3334H3.66667ZM11 11.9167L18.3333 7.33341V5.50008L11 10.0834L3.66667 5.50008V7.33341L11 11.9167Z" fill="#FF9D9B"/>
+                </svg>
+                <span class="contacts-style-element" >alponchino@gmail.com</span>
+            </a>
+            <a class="footer_tel" href="tel:+7 (999) 123-45-67">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4563 18.375C15.6333 18.375 13.8323 17.9778 12.0531 17.1833C10.274 16.3888 8.65521 15.262 7.19688 13.8031C5.73854 12.3442 4.61212 10.7255 3.81762 8.94688C3.02312 7.16829 2.62558 5.36725 2.625 3.54375C2.625 3.28125 2.7125 3.0625 2.8875 2.8875C3.0625 2.7125 3.28125 2.625 3.54375 2.625H7.0875C7.29167 2.625 7.47396 2.69442 7.63438 2.83325C7.79479 2.97208 7.88958 3.136 7.91875 3.325L8.4875 6.3875C8.51667 6.62083 8.50938 6.81771 8.46563 6.97813C8.42188 7.13854 8.34167 7.27708 8.225 7.39375L6.10312 9.5375C6.39479 10.0771 6.741 10.5983 7.14175 11.1011C7.5425 11.604 7.98379 12.089 8.46563 12.5563C8.91771 13.0083 9.39167 13.4277 9.8875 13.8145C10.3833 14.2013 10.9083 14.5548 11.4625 14.875L13.5188 12.8187C13.65 12.6875 13.8215 12.5892 14.0332 12.5239C14.245 12.4585 14.4527 12.4402 14.6562 12.4688L17.675 13.0813C17.8792 13.1396 18.0469 13.2455 18.1781 13.3989C18.3094 13.5523 18.375 13.7235 18.375 13.9125V17.4563C18.375 17.7188 18.2875 17.9375 18.1125 18.1125C17.9375 18.2875 17.7188 18.375 17.4563 18.375Z" fill="#FF9D9B"/>
+                </svg>
+                <span class="contacts-style-element" >+7 (999) 123-45-67</span>
+            </a>
+            <div class="media_icons_container">
+                <a class="media_links" href="#">
+                    <svg class="youtube_svg" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.16667 9.74992L12.9242 6.99992L8.16667 4.24992V9.74992ZM18.7633 2.57242C18.8825 3.00325 18.965 3.58075 19.02 4.31408C19.0842 5.04742 19.1117 5.67992 19.1117 6.22992L19.1667 6.99992C19.1667 9.00742 19.02 10.4833 18.7633 11.4274C18.5342 12.2524 18.0025 12.7841 17.1775 13.0133C16.7467 13.1324 15.9583 13.2149 14.7483 13.2699C13.5567 13.3341 12.4658 13.3616 11.4575 13.3616L10 13.4166C6.15917 13.4166 3.76667 13.2699 2.8225 13.0133C1.9975 12.7841 1.46584 12.2524 1.23667 11.4274C1.1175 10.9966 1.035 10.4191 0.980003 9.68575C0.915836 8.95242 0.888336 8.31992 0.888336 7.76992L0.833336 6.99992C0.833336 4.99242 0.980003 3.51659 1.23667 2.57242C1.46584 1.74742 1.9975 1.21575 2.8225 0.986585C3.25334 0.867419 4.04167 0.784918 5.25167 0.729918C6.44334 0.665752 7.53417 0.638252 8.5425 0.638252L10 0.583252C13.8408 0.583252 16.2333 0.729919 17.1775 0.986585C18.0025 1.21575 18.5342 1.74742 18.7633 2.57242Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="media_links" href="#">
+                    <svg class="vk_svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.82167 1.82175C0.666672 2.98775 0.666672 4.85225 0.666672 8.58675V9.24675C0.666672 12.9757 0.666672 14.8402 1.82167 16.0117C2.98767 17.1667 4.85217 17.1667 8.58667 17.1667H9.24667C12.9757 17.1667 14.8402 17.1667 16.0117 16.0117C17.1667 14.8457 17.1667 12.9812 17.1667 9.24675V8.58675C17.1667 4.85775 17.1667 2.99325 16.0117 1.82175C14.8457 0.666748 12.9812 0.666748 9.24667 0.666748H8.58667C4.85767 0.666748 2.99317 0.666748 1.82167 1.82175ZM3.44967 5.68825H5.34167C5.40217 8.83425 6.78817 10.1652 7.88817 10.4402V5.68825H9.66467V8.39975C10.7482 8.28425 11.8922 7.04675 12.2772 5.68275H14.0482C13.9037 6.38878 13.6152 7.05744 13.2007 7.64699C12.7862 8.23654 12.2546 8.73432 11.6392 9.10925C12.3262 9.45105 12.9328 9.93464 13.4192 10.5281C13.9056 11.1216 14.2605 11.8115 14.4607 12.5522H12.5082C12.0902 11.2487 11.0452 10.2367 9.66467 10.0992V12.5522H9.44467C5.68267 12.5522 3.53767 9.97825 3.44967 5.68825Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="media_links" href="#">
+                    <svg  class="instagram_svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.17499 0.583252H11.825C14.3583 0.583252 16.4167 2.64159 16.4167 5.17492V11.8249C16.4167 13.0427 15.9329 14.2106 15.0718 15.0717C14.2107 15.9328 13.0428 16.4166 11.825 16.4166H5.17499C2.64166 16.4166 0.583328 14.3583 0.583328 11.8249V5.17492C0.583328 3.95713 1.06709 2.78922 1.9282 1.92812C2.7893 1.06702 3.95721 0.583252 5.17499 0.583252ZM5.01666 2.16659C4.26079 2.16659 3.53589 2.46685 3.00141 3.00133C2.46693 3.53581 2.16666 4.26072 2.16666 5.01659V11.9833C2.16666 13.5587 3.44124 14.8333 5.01666 14.8333H11.9833C12.7392 14.8333 13.4641 14.533 13.9986 13.9985C14.5331 13.464 14.8333 12.7391 14.8333 11.9833V5.01659C14.8333 3.44117 13.5587 2.16659 11.9833 2.16659H5.01666ZM12.6562 3.35409C12.9187 3.35409 13.1704 3.45834 13.356 3.64393C13.5416 3.82951 13.6458 4.08121 13.6458 4.34367C13.6458 4.60612 13.5416 4.85783 13.356 5.04341C13.1704 5.22899 12.9187 5.33325 12.6562 5.33325C12.3938 5.33325 12.1421 5.22899 11.9565 5.04341C11.7709 4.85783 11.6667 4.60612 11.6667 4.34367C11.6667 4.08121 11.7709 3.82951 11.9565 3.64393C12.1421 3.45834 12.3938 3.35409 12.6562 3.35409ZM8.5 4.54159C9.54981 4.54159 10.5566 4.95862 11.299 5.70095C12.0413 6.44329 12.4583 7.4501 12.4583 8.49992C12.4583 9.54973 12.0413 10.5566 11.299 11.2989C10.5566 12.0412 9.54981 12.4583 8.5 12.4583C7.45018 12.4583 6.44336 12.0412 5.70103 11.2989C4.9587 10.5566 4.54166 9.54973 4.54166 8.49992C4.54166 7.4501 4.9587 6.44329 5.70103 5.70095C6.44336 4.95862 7.45018 4.54159 8.5 4.54159ZM8.5 6.12492C7.87011 6.12492 7.26602 6.37514 6.82062 6.82054C6.37522 7.26594 6.125 7.87003 6.125 8.49992C6.125 9.12981 6.37522 9.7339 6.82062 10.1793C7.26602 10.6247 7.87011 10.8749 8.5 10.8749C9.12988 10.8749 9.73398 10.6247 10.1794 10.1793C10.6248 9.7339 10.875 9.12981 10.875 8.49992C10.875 7.87003 10.6248 7.26594 10.1794 6.82054C9.73398 6.37514 9.12988 6.12492 8.5 6.12492Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="operating-mode_wrapper">
+            <span class="footer_top_txt">
+                Режим работы и приема заказов:
+            </span>
+            <div class="operating_span">
+                <span class="footer-timeAndDays">
+                    пн-вс:
+                </span>
+                <span class="footer_time footer-timeAndDays"> 10:00 - 20:00</span>
+            </div>
+            <span class="footer_privacy footer_txt">
+                Политика конфиденциальности
+            </span>
+            <span class="footer_personal_data footer_txt">
+                Политика обработки персональных данных
+            </span>
+        </div>
+    </div>
+</footer>
+<script src="../src/js/card.js"></script>
+</body>
+</html>

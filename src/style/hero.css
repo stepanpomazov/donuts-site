@@ -1,0 +1,91 @@
+
+.hero-section{
+    max-width: 1440px;
+    min-height: 740px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*background-color: var(--white-color);*/
+    position: relative;
+}
+
+.hero-content-wrapper{
+    max-width: 560px;
+    max-height: 500px;
+    display: flex;
+    justify-items: start;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero-title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.hero-title-path{
+    font-family: "Rubik Doodle Shadow", serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    color: var(--red-text-hero-title);
+}
+
+.hero-text{
+    max-width: 530px;
+    padding-top: 20px ;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+.btn-constraction{
+    margin-top: 40px;
+    max-width: 50%;
+    min-height: 64px;
+    border-radius: 28px;
+    background-color: var(--pink-color-button);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white-color);
+}
+
+.btn-maim{
+    margin-top: 20px;
+    max-width: 227px;
+    min-height: 64px;
+    border-radius: 28px;
+    background-color: var(--pink-color-button);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white-color);
+}
+
+.general-blue-donut{
+    position: absolute;
+    left: 53%;
+    bottom: 79%;;
+}
+.general-red-donut{
+    position: absolute;
+    left: 56%;
+    top: 54%;
+}
+
+.general-big-donut{
+    position: absolute;
+    left: 61%;
+    top: -4%;
+}
+
+.general-chocolat-donut{
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+}

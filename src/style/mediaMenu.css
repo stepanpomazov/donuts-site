@@ -1,0 +1,91 @@
+@media (max-width: 370px) {
+    .main-wrapper {
+        max-width: 370px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .baner-input-wrapper{
+        gap: 30px;
+        padding: 10px;
+    }
+    
+    .banner {
+        width: 282px;
+        height: 90px;
+        padding-top: 10px;
+    }
+
+    .baner-txt{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .baner-num {
+        font-size: 18px;
+        font-weight: 600; 
+        letter-spacing: 3px; 
+        margin-left: 40px;
+    }
+    
+    .baner-promo{
+        font-size: 16px;
+        letter-spacing: 2px; 
+        margin-left: 20px;  
+        margin-top: 15px; 
+    }
+    
+    .span-promo{
+        font-size: 16px;
+    }
+
+    .input-wrapper {
+        width: 280px;
+        padding: 2px 10px 2px 10px;
+        height: 46px;
+    }
+
+    .search {
+        width: 240px; 
+        height: 42px;
+        border: none;   
+     }
+
+     .btn-search {
+        position: absolute;
+        left: 220px;
+    }
+
+    .menu-navigation{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    
+    .menu-navigation-wrapper{
+        margin: 10px;
+    }
+
+    .link-main {
+        font-size: 16px; 
+    }
+
+    .grid-card{
+        gap:10px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 360px;
+    }
+    /* Стили карточки товара */
+    .card{   
+        padding: 5px;
+        max-width: 160px;
+    } 
+    .price-span{
+        font-size: 16px;
+    }
+    
+}    

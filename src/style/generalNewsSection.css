@@ -1,0 +1,66 @@
+.news-section {
+    max-width: 1440px;
+    min-height: 660px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.news-title{
+    font-family: 'mulish-regular', sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black-color);
+}
+
+.news-generalImg-mobile{
+    display: none;
+}
+
+.news-text-section{
+    margin: 38px 0 35px 0;
+    font-family: 'MontserratAlternates-regular', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black-color);
+}
+
+.news-wrapper-content{
+    min-width: 1200px;
+    max-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news-wrapper-text{
+    max-width: 608px;
+}
+
+.news-text{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.news-link{
+    font-family: 'MontserratAlternates-Medium', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+.background-pattern-left{
+    position: absolute;
+    left: 130px;
+    top: 15px;
+}
+
+.background-pattern-right{
+    position: absolute;
+    right: 130px;
+    top: 15px;
+}

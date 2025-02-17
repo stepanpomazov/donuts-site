@@ -1,0 +1,43 @@
+@media (max-width: 370px) {
+.footer{
+    margin-top: 100px;
+}
+
+.footer-wrapper{
+    max-width: 370px;
+    margin-left: 22px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer_nav{
+    margin-top: 32px;
+}
+
+.footer_nav_ul{
+    margin-top: 3px;
+}
+
+.contacts_wrapper{
+    margin: 32px 0;
+}
+
+.footer_contacts{
+    margin-top: 13px;
+}
+
+.operating-mode_wrapper{
+    min-height: 0;
+    margin-left: 0;
+    margin-bottom: 32px;
+    justify-content: center;
+}
+
+.operating_span{
+    margin-top: 0;
+}
+
+.footer_privacy{
+    margin-top: 32px;
+}
+}

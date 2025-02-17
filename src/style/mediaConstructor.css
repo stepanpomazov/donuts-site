@@ -1,0 +1,140 @@
+@media (max-width: 370px) {
+    .constructor-wrapper {   
+        max-width: 304px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto; 
+        padding-top: 10px;
+    }
+
+    .frame {
+        width: 304px;
+        height: 172px;
+        margin-top: 20px;
+    }
+
+    .bg-container{
+        width: 304px;
+        height: 145px;
+        margin-top: 45px;
+    }
+
+    .title-constructor-wrapper {
+        max-width: 370px; 
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .constructor-title {
+        font-size: 28px;
+        padding-bottom: 8px;
+    }
+    .calories-title{
+        font-weight: 500;
+        font-size: 18px;
+        margin: 30px;
+    }
+
+    .nutrition {
+        max-width: 308px;
+        height: 90px;
+        margin-top: 5px;
+    }
+    
+    .nutrition-wrapper {
+        width: 71px;
+        height: 90px;
+        gap: 14px;
+    }
+
+    .nutrition-type {
+        margin-top: 7px;
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    .nutrition-round{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nutrition-value{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .text-choose {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .button-container {    
+        width: 272px;
+        height: 90px;
+        gap: 5px;
+        overflow-x: scroll;
+    }
+
+    .option {
+        padding: 10px;
+        min-width: 115px;
+        height: 90px;
+    }
+
+    .round {
+        width: 32px;
+        height: 32px;
+        margin-top: 2px;
+    }
+
+    .sort {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    
+    .sort-price {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    .form-wrapper {
+        max-width: 360px; 
+        min-height: 94px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-left: 0px;
+        padding: 14px 40px 14px 10px;  
+    }
+
+    .total-text {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .total-price-wrapper{
+        max-width: 316px;
+        height: 112px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 0px 30px 0px 10px;
+        border: none;
+    } 
+
+    .totalprice{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .incart{
+        width: 316px;
+        height: 48px;
+    }        
+}

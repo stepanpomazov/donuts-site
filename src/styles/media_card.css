@@ -1,0 +1,183 @@
+@import "media_header.css";
+@import "media_footer.css";
+
+@media (max-width: 360px) {
+    .card_ul {
+        display: none;
+    }
+
+    .media_card_link_h2 {
+        display: flex;
+        gap: 5px;
+    }
+
+    .menu_link_card_mobile {
+        display: block;
+    }
+
+    .card_h2 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+
+    .card_section {
+        margin: 0 auto;
+        width: 100%;
+        height: 954px;
+        padding: 32px 22px 0 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .card_donut_picture {
+        max-width: 317px;
+        height: 207px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        background-color: var(--donut-picture-background);
+    }
+
+    .main_card_flex_wrapper {
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right_card_flex_container {
+        display: flex;
+        gap: 16px;
+    }
+
+    .card_btn_wrapper {
+        display: none;
+    }
+
+    .card_price_span {
+        display: none;
+    }
+
+    .energy_value_wrapper {
+        display: none;
+    }
+
+    .card_description_wrapper {
+        order: 1;
+    }
+
+    .card_h3_energy {
+        display: none;
+    }
+
+    .energy_value_wrapper_media {
+        width: 308px;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .media_card_return {
+        display: flex;
+        gap: 3px;
+    }
+
+    .media_card_container_energy {
+        order: 2;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .energy_wrappers {
+        width: 71px;
+        height: 90px;
+        padding-top: 18px;
+        padding-bottom: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 40px;
+    }
+
+    .card_title_spans {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .energy_btn_media {
+        order: 2;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .card_main_text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .total_cost_media_title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .total_cost_media_card {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .sum_wrapper_media_card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .btn_media_cart_card {
+        width: 316px;
+        height: 48px;
+        display: block;
+        color: var(--white-color);
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        border-radius: 20px;
+        background-color: var(--black-color);
+        border: 1px solid var(--dark-grey-color);
+    }
+
+    .card_btn_cart:hover {
+        background-color: var(--grey-color);
+        border: 0;
+    }
+
+    .count_controls {
+        width: 316px;
+    }
+
+    .cart_count_change_btns {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: var(--footer-main-color);
+    }
+}

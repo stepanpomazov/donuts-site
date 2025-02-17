@@ -1,0 +1,120 @@
+.body {
+    overflow-x: hidden;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-peach-header-color);
+}
+
+.header_wrapper {
+
+    width: 1138px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50px);
+}
+
+.header_nav_ul {
+    display: flex;
+    gap: 32px;
+}
+
+.opening_hours_wrapper {
+    min-width: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-right: 20px;
+}
+
+.clock {
+    width: 22px;
+    height: 22px;
+    fill: var(--peach-color);
+}
+.opening_hours_span {
+    color: var(--orange-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.clock_style {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header_icons_container {
+    width: 110px;
+    height: 44px;
+    display: flex;
+    gap: 22px;
+}
+
+.header_cart {
+    position: relative;
+}
+
+.header_cart_number {
+    position: absolute;
+    bottom: 34px;
+    left: 26px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 1px solid var(--white-color);
+    background-color: var(--orange-color);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.cart_digit {
+    line-height: 14px;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.header_login-cart_styles {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--peach-color);
+}
+
+.header_login-cart_styles_clicked {
+    transform: scale(0.85);
+    border: 2px solid var(--choco-color);
+    opacity: 0.7;
+}
+
+.header_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_icon{
+    display: none;
+}

@@ -1,0 +1,133 @@
+
+.body{
+    overflow-x: hidden;
+}
+
+.header {
+    max-width: 1440px;
+    min-height: 125px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  position: relative;*/
+
+}
+
+.header_wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    width: 100px;
+    height: 100px;
+    border-radius:50px;
+}
+
+.header_nav{
+    width: 580px;
+    margin-right: 70px;
+}
+
+.header_nav_ul {
+    display: flex;
+    gap: 32px;
+}
+
+.link_style{
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.opening_hours_wrapper {
+    min-width: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-right: 20px;
+}
+
+.clock{
+    width: 22px;
+    height: 22px;
+    fill: var(--peach-color);
+}
+.opening_hours_span {
+    color: var(--orange-cart);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.clock_style{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header_abour-us_icons_container {
+    width: 110px;
+    height: 44px;
+    display: flex;
+    gap: 22px;
+}
+
+.header_login-cart_styles {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--peach-color);
+}
+
+.header_cart {
+    padding: 7px;
+}
+
+.header_login {
+    padding: 10px 7px 10px 13px;
+}
+
+.header_login-cart_styles_clicked {
+    transform: scale(0.85);
+    border: 2px solid var(--choco-color);
+    opacity: 0.7;
+}
+
+/* Стили для счетчика товаров в корзне */
+.cart_position{
+    position: relative;
+}
+
+.cart_position::after{
+   position: absolute; 
+   width: 22px;
+   height: 20px;
+   border-radius: 7px; 
+   border: 1px solid white;
+   background-color: var(--orange-cart);
+   top: -9px;
+   left: 26px;
+   content: attr(data-before);
+   color: var(--white-color);
+   font-size: 12px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hidden::after{
+  opacity: 0; 
+  pointer-events: none; /* Исключает взаимодействие */
+}
+
+.menu_icon{
+    display: none;
+}
+

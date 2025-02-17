@@ -1,0 +1,100 @@
+.carousel-section{
+    max-width: 1440px;
+    min-height: 700px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    display: grid;
+    justify-items: center;
+    align-content: space-around;
+    position: relative;
+}
+
+.carousel-section-title{
+    font-family: "mulish-regular", sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.carousel-wrapper{
+    max-width: 1030px;
+    max-height: 325px;
+    display: flex;
+    gap: 44px;
+
+}
+
+.carousel-card-wrapper{
+    min-width: 224px;
+    min-height: 324px;
+    border-radius: 30px;
+    background-color: var(--yellow-background-card);
+    display: grid;
+    justify-items: center;
+
+}
+
+.like-link-png{
+    margin: 10px 0 0 158px;
+}
+
+.title-card-carousel{
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.text-card-carousel{
+    max-width: 193px;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.footer-card-wrapper{
+    min-width: 83%;
+    max-height: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cost-card-carousel{
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+}
+
+.carousel-nav-left {
+    left: 10px;
+}
+
+.carousel-nav-right {
+    right: 10px;
+}
+/*.carousel-wrapper {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.carousel-inner {*/
+/*    display: flex;*/
+/*    width: 300%;*/
+/*    transition: transform 0.5s;*/
+/*}*/
+
+/*.carousel-item {*/
+/*    flex: 1;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.carousel-item img {*/
+/*    width: 100%;*/
+/*    max-height: 400px;*/
+/*    object-fit: cover;*/
+/*}*/
+

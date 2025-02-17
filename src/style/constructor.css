@@ -1,0 +1,378 @@
+:root{
+    --white-color: #FFFFFF;
+    --grey: #C9C9C9;
+    --black: black;
+    --chokolate: #57392F;
+    --vanil: #FFF3DA;
+    --strawberry: #E3454E;
+    --yellow: #FFE25A;
+    --orange: #FF9F51;
+    --caramel: #C86223;
+    --peach: #D66E52;
+    --nut:#A96A44;
+    --light-blue:#DFF4FD;
+    --pale-rose:#F9EAF1;
+    --light-orange:#FFF3E8;
+    --light-peach: #FFFCF9;
+    --light-rose:#FEECF0;
+    --light-grey: #EBEBEB;
+    --dark-grey: #707070;
+    --pink: #FFAEAE;
+    
+  }
+    
+  .frame {
+    position: relative;
+    width: 485px;
+    height: 273px;
+    margin-top: 154px;
+}
+
+.bg-container {
+    width: 486px;
+    height: 240px;  
+    position: absolute;
+    z-index: -1;
+    margin-top: 75px;
+    background-color: var(--grey);
+    border-radius: 38px;
+}
+
+/* Общие стили для изображений, чтобы не теряли пропорции */
+.image-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Сохраняем пропорции изображения */
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header::after {
+    content: none;
+}
+
+/* Стили для галереи */
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.button-container {    
+    width: 540px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+} 
+
+.button-container::-webkit-scrollbar {
+    display: none;
+}
+
+/*.gallery-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;   
+    gap: 17px;
+    flex: none;
+}*/
+
+.scroll-btn {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-top: 1px solid var(--dark-grey);
+    border-right: 1px solid var(--dark-grey);
+}
+
+.left-arrow{
+    transform: rotate(-135deg);
+}
+
+.right-arrow{
+    transform: rotate(45deg);
+}
+
+.inactive{
+    border-top: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+}
+
+/* Стили для отображения КБЖУ */
+.calories-title{
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: 90px;
+}
+
+.nutrition {
+    max-width: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nutrition-wrapper {
+    width: 82px;
+    height: 132px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 27px;
+    border: 1px solid var(--light-grey);
+    border-radius: 50px;
+}
+
+.nutrition-type {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nutrition-round{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.nutrition-value{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bg-blue{
+    background-color: var(--light-blue);
+}
+
+.bg-rose{
+    background-color: var(--pale-rose);
+}
+
+.bg-light-orange{
+    background-color: var(--light-orange);
+}
+
+.bg-light-rose{
+    background-color: var(--light-rose);
+}
+
+/* Стили заголовков */
+.header-bg {
+    background-color: var(--peach-circle-background);
+}
+
+.title-constructor-wrapper {
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding-top: 52px;
+}
+
+.constructor-title {
+    max-width: 358px;
+    font-size: 32px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-bottom: 8px;
+}
+
+.dp-flex {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.donut-container {
+    width: 43%;
+}
+
+.text-filling {
+    max-width: 502px;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-choose {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.constructor-wrapper {   
+    max-width: 1140px;
+    display: flex;
+    gap: 70px;
+    margin: 0 auto; 
+    padding-top: 52px;  
+    padding-bottom: 70px;
+}
+
+/*Стили кнопок*/ 
+.option {
+    padding: 10px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    min-width: 115px;
+    height: 166px;
+    border: solid 1px var(--light-grey);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.selected {
+    border: solid 3px var(--pink);
+    box-shadow: -5px -5px 5px rgba(255, 174, 174, 0.3);
+}
+
+.round {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.chokolate{
+    background-color: var(--chokolate);
+}
+
+.vanil {
+    background-color: var(--vanil);
+}
+
+.strawberry{
+    background-color: var(--strawberry);
+}
+
+.lemon{
+    background-color: var(--yellow);
+}
+
+.caramel{
+    background-color: var(--caramel);
+}
+
+.peach{
+    background-color: var(--peach);
+}
+
+.nuts{
+    background-color: var(--nut);
+}
+.orange{
+    background-color: var(--orange);
+}
+
+.sort {
+    font-size: 12px;
+    margin-top: 9px;
+}
+
+.sort-price {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* стили для topping checkbox */
+.form-wrapper {
+    max-width: 580px; 
+    min-height: 94px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    row-gap: 12px; 
+    column-gap: 50px;   
+    margin-top: 16px;
+    margin-left: 20px;
+    padding: 14px 40px 14px 40px;    
+    border: 1px solid var(--light-grey); 
+    border-radius: 30px;
+}
+
+.topping-wrapper{
+    width: 215px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.optiontop {
+    width: 20px;
+    height: 20px;
+}
+
+.topping-label{
+    font-size: 12px;
+}
+
+.topping-span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*Стили для Итоговой стоимости*/
+.total-price-wrapper{
+    max-width: 662px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding: 0px 30px 0px 30px;
+    border: 1px solid var(--light-grey); 
+    border-radius: 30px;
+} 
+
+.totalprice{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.incart{
+    width: 200px;
+    height: 48px;
+    background-color: var(--black);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.total-text {
+    display: none;
+}

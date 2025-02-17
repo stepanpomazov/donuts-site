@@ -1,0 +1,10 @@
+@import url('generalFonts.css');
+@import url('./normalize.css');
+@import url('generalGlobal.css');
+@import url('generalHeader.css');
+@import url('generalHeroSection.css');
+@import url('generalAdvantageSection.css');
+@import url('generalCarouselSection.css');
+@import url('generalNewsSection.css');
+@import url('generalFooter.css');
+@import url('generalMedia.css');

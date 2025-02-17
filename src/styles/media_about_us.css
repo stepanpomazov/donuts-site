@@ -1,0 +1,129 @@
+@import "media_header.css";
+@import "media_footer.css";
+
+@media (max-width: 360px) {
+    .main {
+        margin: 0  auto;
+        padding: 28px 33px;
+    }
+
+    .about_us_hero_section {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .about_us_hero_main_container {
+        max-width: 1138px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .about_us_h2 {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 400;
+    }
+
+    .about_us_hero_txt {
+        display: none;
+        width: 294px;
+        height: 425px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        white-space: normal;
+    }
+
+    .about_us_hero_txt_mobile {
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 294px;
+        height: 425px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .about_us_hero_picture {
+        max-width: 100%;
+        max-height: 100%;
+           }
+
+    .about_us_hero_picture_wrapper {
+        width: 261px;
+        height: 301px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_us_ornament_hero {
+        display: none;
+    }
+
+    .about_us_ornament_hero_mobile {
+        display: block;
+    }
+
+    .about_us_section_our_values {
+        height: 750px;
+    }
+
+    .about_us_values_icons_wrapper {
+       display: none;
+    }
+
+    .about_us_values_spans_wrapper {
+        display: none;
+    }
+
+    .about_us_values_mobile_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .about_us_values_mobile_containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 400;
+        color: var(--brown-text-color);
+    }
+
+    .about_us_history_wrapper {
+        height: 1210px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_us_h3 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .about_us_histury_p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        /*text-indent: 10px;*/
+    }
+
+    .about_us_history_articles {
+        width: 295px;
+        height: 100%;
+    }
+}
