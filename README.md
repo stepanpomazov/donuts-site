@@ -26,4 +26,11 @@
 
 ## Developers
 
-- [StepanPomazov](https://github.com/stepanpomazov)
+- [Filipp Orekhov](https://github.com/Filipp-Orekhov)
+- [Stepan Pomazov](https://github.com/stepanpomazov)
+- [Ekaterina Katkova](https://github.com/Ekka-Kat)
+- [Alexey Lukin](https://github.com/Alex-Lookin)
+- [Diana Disketk](https://github.com/discetk)
+
+## Project manager, teacher
+- [Isaev Nikita](https://github.com/NikitaVegas95)
